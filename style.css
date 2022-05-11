@@ -1,0 +1,261 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+body{
+    margin:0 ;
+}
+
+.logo {
+   
+    position: relative;
+    background: url(/illu/pink.jpg);
+    text-align: center;
+    
+}
+
+nav 
+{
+  
+    width: 100%;
+    /* height: 100px; */
+    /* background: white; */
+}
+
+/* ******menu burger******* */
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ /* ***** color font***** */
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 40px;
+    color: pink 
+}
+ 
+nav a:hover 
+{
+    color: rgb(244, 203, 109)
+}
+
+/* ********************* */
+
+label
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav {
+        height: 100px;
+    }
+ 
+    nav .main_pages {
+        display: none;
+    }
+ 
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: pink
+        cursor: pointer;
+    }
+}
+
+/* ***************** */
+
+
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ /* ****background menu burger ******** */
+    nav .main_pages 
+    {   
+        display: none;
+        flex-direction: column;
+        background:white;
+        height: 400px;
+        position: relative;
+        z-index: 1;
+        
+        
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ /* ****color menu burger****** */
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color:pink;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+
+
+/* ******barre******************* */
+  
+.barre {
+   
+    display: block;
+    height: 5px;
+    width: 100%;
+    box-shadow: 10px 50px pink ;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+
+  
+  /* ********image****** */
+
+
+  /* img {
+      transform: scale(0.7);
+  
+  } */
+
+  /* img {
+    overflow: hidden;
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+    object-position: top bottom;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 40px;
+} */
+
+img {
+    width: auto;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.illu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1px 20px;
+    margin: 1px 50px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+}
+
+.dessin:hover {
+    transform: scale(1.05);
+      transform: 0.10s ease-in-out;
+}
+
+
+
+    
+
+
+/* **********page web*********** */
+
+.web {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+
+.page {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
+}
+
+  
+a .page:hover {
+    opacity: 0.50;
+    transform: scale(1.05);
+    transform: 0.10s ease-in-out;
+  }
+
+
+
+
+/* .page {
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: top bottom;
+} */
+
+
+
+/* *******graphic design******* */
+
+
+
+    
+    /* .graphic {
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1px 20px;
+        margin: 10px 50px;
+    }
+ */
+
+ .graphic {
+     /* width: 400px;
+     height: auto; */
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+
+ }
+
+ .design:hover {
+    transform: scale(1.05);
+      transform: 0.10s ease-in-out;
+}
+
